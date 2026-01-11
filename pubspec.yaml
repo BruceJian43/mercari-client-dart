@@ -1,0 +1,7 @@
+name: mercari_api_dart
+dependencies:
+  http: ^1.6.0
+  uuid: ^4.5.2
+  webcrypto: ^0.6.0
+environment:
+  sdk: ^3.10.0
