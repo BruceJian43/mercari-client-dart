@@ -1,4 +1,4 @@
-name: mercari_api_dart
+name: mercari_client_dart
 dependencies:
   http: ^1.6.0
   uuid: ^4.5.2

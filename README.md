@@ -38,36 +38,13 @@ flutter pub get
 flutter pub run webcrypto:setup
 ```
 
----
+### 4. Run the example:
 
-## 💻 Usage
-
-Below is an example script demonstrating how to search for items using the client.
-
-```dart
-import 'package:mercari_client_dart/mercari_client.dart';
-
-void main() async {
-  final client = MercariClient();
-
-  try {
-    print('Searching for "Nintendo Switch"...');
-    
-    // Search for items
-    final items = await client.searchItems('Nintendo Switch');
-
-    // Display the first 5 results
-    for (final item in items.take(5)) {
-      print('- ${item['name']} (¥${item['price']})');
-    }
-  } catch (e) {
-    print('Error: $e');
-  } finally {
-    client.close();
-  }
-}
-
+```bash
+dart run example/search.dart "Nintendo Switch"
 ```
+
+---
 
 ## Disclaimer
 This is an unofficial library. It is not affiliated with, endorsed by, or connected to Mercari, Inc. Use this software responsibly and in accordance with Mercari's terms of service.
