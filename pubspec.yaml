@@ -2,7 +2,11 @@ name: mercari_client_dart
 dependencies:
   http: ^1.6.0
   uuid: ^4.5.2
-  webcrypto: ^0.6.0
+  dpop:
+    git:
+      url: https://github.com/BruceJian43/dpop-dart.git
+      ref: main
+      path: dpop
 dev_dependencies:
   test: ^1.29.0
 environment:
